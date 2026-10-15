@@ -1,0 +1,13 @@
+minimumLimaVersion: "2.0.0"
+base: template:_images/ubuntu-lts
+vmType: vz
+arch: aarch64
+cpus: 4
+memory: "6GiB"
+disk: "20GiB"
+containerd:
+  system: false
+  user: false
+mounts: []
+networks:
+  - lima: user-v2
